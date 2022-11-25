@@ -2,19 +2,29 @@
   "name": "expo-packages-manager",
   "version": "0.0.1",
   "description": "Simple CLI tool to handle Expo SDK packages in your project",
-  "main": "index.js",
+  "main": "dist/index.js",
   "repository": "https://github.com/TMisiukiewicz/expo-packages-manager.git",
   "author": "Tomasz Misiukiewicz <tomasz.misiukiewicz@callstack.com>",
   "license": "MIT",
   "scripts": {
-    "build": "npx tsc"
+    "build": "npx tsc",
+    "start": "node ./dist",
+    "watch": "nodemon -e js,ts --watch src --exec \"yarn build && yarn start\""
   },
   "dependencies": {
-    "commander": "^9.4.1",
-    "figlet": "^1.5.2"
+    "commander": "^9.4.1"
   },
   "devDependencies": {
     "@types/node": "^18.11.9",
-    "typescript": "^4.9.3"
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "typescript": "*"
   }
 }
