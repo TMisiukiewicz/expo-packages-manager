@@ -12,6 +12,7 @@
     "watch": "nodemon -e js,ts --watch src --exec \"yarn build && yarn start\""
   },
   "dependencies": {
+    "chalk": "4.1.2",
     "commander": "^9.4.1"
   },
   "devDependencies": {
