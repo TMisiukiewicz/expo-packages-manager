@@ -13,7 +13,8 @@
   },
   "dependencies": {
     "chalk": "4.1.2",
-    "commander": "^9.4.1"
+    "commander": "^9.4.1",
+    "table": "^6.8.1"
   },
   "devDependencies": {
     "@types/node": "^18.11.9",
