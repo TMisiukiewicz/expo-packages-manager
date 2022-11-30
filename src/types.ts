@@ -1,3 +1,4 @@
+export type List = 'all' | 'installed';
 export interface Commands {
-  list: VoidFunction;
+  list: List;
 }
